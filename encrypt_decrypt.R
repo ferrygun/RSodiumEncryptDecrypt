@@ -1,3 +1,6 @@
+suppressMessages(library(openssl))
+suppressMessages(library(sodium))
+
 encrypt <- function() {
   key <- hash(charToRaw("iERPs3cr3t"))
   msg <- serialize("iERP", NULL)
